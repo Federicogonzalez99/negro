@@ -1,0 +1,89 @@
+# depslib dependency file v1.0
+1570623051 source:d:\parcial_1_gonzalez\trabajo.c
+
+1570629561 source:d:\parcial_1_gonzalez\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lavadero.h"
+	"utn.h"
+
+1570629680 d:\parcial_1_gonzalez\lavadero.h
+
+1570629867 d:\parcial_1_gonzalez\utn.h
+	"lavadero.h"
+
+1570629556 source:d:\parcial_1_gonzalez\lavadero.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"lavadero.h"
+
+1570629503 source:d:\parcial_1_gonzalez\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"lavadero.h"
+
+1570629558 source:e:\parcial_1_gonzalez\lavadero.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"lavadero.h"
+
+1570629868 e:\parcial_1_gonzalez\utn.h
+	"lavadero.h"
+
+1570656770 e:\parcial_1_gonzalez\lavadero.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1570629562 source:e:\parcial_1_gonzalez\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lavadero.h"
+	"utn.h"
+
+1570623052 source:e:\parcial_1_gonzalez\trabajo.c
+
+1570629504 source:e:\parcial_1_gonzalez\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"lavadero.h"
+
+1571200335 source:c:\users\fedegonzalez\desktop\parcial_1_gonzalez\lavadero.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"lavadero.h"
+
+1570629868 c:\users\fedegonzalez\desktop\parcial_1_gonzalez\utn.h
+	"lavadero.h"
+
+1570725490 c:\users\fedegonzalez\desktop\parcial_1_gonzalez\lavadero.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1570623052 source:c:\users\fedegonzalez\desktop\parcial_1_gonzalez\trabajo.c
+
+1571193816 source:c:\users\fedegonzalez\desktop\parcial_1_gonzalez\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"lavadero.h"
+
+1571193843 source:c:\users\fedegonzalez\desktop\parcial_1_gonzalez\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lavadero.h"
+	"utn.h"
+
