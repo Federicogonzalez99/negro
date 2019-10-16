@@ -154,52 +154,60 @@ int baja_auto(eAuto array[], int tam)
     }
     return retorno;
 }
+
 int listar_autos(eAuto array[], int tamAuto, eMarca arrayM[], int tamM)
 {
-
+    char auxSalida[25];
     int i, j;
     int retorno = -1;
     eAuto aux;
     eMarca auxM;
+    char auxDesc1[25];
+    char auxDesc2[25];
     if(array!=NULL && tamAuto>0)
     {
-    for(i=0;i<tamAuto-1;i++)
+    for(i=0;i<tamAuto -1 ;i++)
     {
 
-        for(j=i+1;j<tamAuto;j++)
+        for(j=0;j<tamAuto -i -1;j++)
         {
+            buscar_descripcionMarca(arrayM,tamM,array[j].idMarca, auxDesc1);
+            buscar_descripcionMarca(arrayM,tamM,array[j + 1].idMarca,auxDesc2);
 
-            if(strcmp(arrayM[i].descripcion,arrayM[j].descripcion)>0)
+            if(strcmp(auxDesc1,auxDesc2)> 0)
             {
-               auxM = arrayM[i];
-               arrayM[i]= arrayM[j];
-               arrayM[j]= auxM;
+               auxM = arrayM[j];
+               arrayM[j]= arrayM[j + 1];
+               arrayM[j + 1]= auxM;
 
-               aux = array[i];
-               array[i]=array[j];
-               array[j]=aux;
+               aux = array[j];
+               array[j]=array[j + 1];
+               array[j + 1]=aux;
             }
-            if(strcmp(arrayM[i].descripcion,arrayM[j].descripcion) == 0)
+
+            if(strcmp(auxDesc1,auxDesc2) == 0)
             {
-                if(array[i].patente > array[j].patente)
+                if(array[j].patente > array[j + 1].patente)
                 {
-                    auxM = arrayM[i];
-                    arrayM[i]= arrayM[j];
-                    arrayM[j]= auxM;
+                    auxM = arrayM[j];
+                    arrayM[j]= arrayM[j + 1 ];
+                    arrayM[j + 1]= auxM;
 
 
-                    aux = array[i];
-                    array[i]=array[j];
-                    array[j]=aux;
+                    aux = array[j];
+                    array[j]=array[j + 1];
+                    array[j + 1]=aux;
                 }
             }
         }
     }
+
     for(i=0;i<tamAuto;i++)
     {
         if(array[i].estado==0)
         {
-            printf("\nMarca: %s - IDAuto: %d - Patente: %d - IDColor: %d - Modelo: %d",arrayM[i].descripcion,array[i].idAuto,array[i].patente,array[i].idColor,array[i].modelo);
+            buscar_descripcionMarca(arrayM,tamM,array[i].idMarca,auxSalida);
+            printf("\nIDAuto: %d - Patente: %d - IDColor: %d - Modelo: %d - Marca: %s",array[i].idAuto,array[i].patente,array[i].idColor,array[i].modelo,auxSalida);
         }
 
     }

@@ -56,34 +56,44 @@
 	"utn.h"
 	"lavadero.h"
 
-1571200335 source:c:\users\fedegonzalez\desktop\parcial_1_gonzalez\lavadero.c
+1571207202 source:c:\users\fedegonzalez\desktop\parcial_1_gonzalez\lavadero.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"utn.h"
 	"lavadero.h"
 
-1570629868 c:\users\fedegonzalez\desktop\parcial_1_gonzalez\utn.h
+1571210653 c:\users\fedegonzalez\desktop\parcial_1_gonzalez\utn.h
 	"lavadero.h"
 
-1570725490 c:\users\fedegonzalez\desktop\parcial_1_gonzalez\lavadero.h
+1571209401 c:\users\fedegonzalez\desktop\parcial_1_gonzalez\lavadero.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 
-1570623052 source:c:\users\fedegonzalez\desktop\parcial_1_gonzalez\trabajo.c
-
-1571193816 source:c:\users\fedegonzalez\desktop\parcial_1_gonzalez\utn.c
+1571210047 source:c:\users\fedegonzalez\desktop\parcial_1_gonzalez\trabajo.c
+	"trabajo.h"
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"utn.h"
 	"lavadero.h"
 
-1571193843 source:c:\users\fedegonzalez\desktop\parcial_1_gonzalez\main.c
+1571205646 source:c:\users\fedegonzalez\desktop\parcial_1_gonzalez\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"lavadero.h"
+
+1571208660 source:c:\users\fedegonzalez\desktop\parcial_1_gonzalez\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"lavadero.h"
 	"utn.h"
+	"trabajo.h"
+
+1571210651 c:\users\fedegonzalez\desktop\parcial_1_gonzalez\trabajo.h
+	"lavadero.h"
 

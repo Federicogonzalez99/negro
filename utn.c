@@ -326,4 +326,23 @@ int buscar_descripcionMarca(eMarca array[], int tam,int id, char* descripcion)
     }
     return retorno;
 }
-
+int buscarPatenteA(eAuto array[],int tam,int valor)
+{
+    int i;
+    int retorno =-1;
+    if(array!=NULL && tam>0)
+    {
+        for(i=0;i<tam;i++)
+        {
+            if(array[i].patente == valor)
+            {
+                if(array[i].estado==0)
+                {
+                    retorno = 0;
+                    break;
+                }
+            }
+        }
+    }
+    return retorno;
+}

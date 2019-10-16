@@ -3,6 +3,7 @@
 #include <string.h>
 #include "lavadero.h"
 #include "utn.h"
+#include "trabajo.h"
 #define QTY_TYPO 5
 #define QTY_SER 4
 int main()
@@ -10,6 +11,8 @@ int main()
     char opcion;
     int flag=0;
     int contAuto=0;
+    int contTrabajo=0;
+    eTrabajo vecTrabajo[QTY_TYPO];
     eFecha vecFecha[QTY_TYPO];
     lavadero_fechaI(vecFecha, QTY_TYPO);
     eAuto vecAuto[QTY_TYPO];
@@ -34,7 +37,7 @@ int main()
     {20002,"Encerado",400,0},
     {20003,"Completo",600,0}
     };
-
+    trabajo_Inicializar(vecTrabajo,QTY_TYPO);
     do
     {
         utn_PedirChar("\nA.Alta auto\nB.Modificar Auto\nC.Baja Auto\nD.Listar Autos\nE.Listar Marcas\nF.Listar Colores\nG.Listar Servicios\nH.Alta Trabajo\nI.Listar Trabajos\nS.Salir\n","Error",1,10,2,&opcion);
@@ -65,7 +68,14 @@ int main()
             }
             break;
         case 'D':
-            listar_autos(vecAuto,QTY_TYPO,vecMarca,QTY_TYPO);
+            if(flag==1)
+            {
+                listar_autos(vecAuto,QTY_TYPO,vecMarca,QTY_TYPO);
+            }
+            else
+            {
+                printf("Primero tiene que dar de alta un auto");
+            }
             break;
         case 'E':
             listar_Marcas(vecMarca,QTY_TYPO);
@@ -77,8 +87,10 @@ int main()
             listar_servicios(vecServicio,QTY_SER);
             break;
         case 'H':
+            alta_trabajo(vecAuto,QTY_TYPO,vecServicio,QTY_SER,vecMarca,QTY_TYPO,vecTrabajo,QTY_TYPO,&contTrabajo);
             break;
-        case 'L':
+        case 'I':
+            listar_Trabajos(vecTrabajo,QTY_TYPO,vecAuto,QTY_TYPO,vecServicio,QTY_SER);
             break;
         case 'S':
             break;
